@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Users\matty\source\repos\Prime Products++\Prime Products++\src\main.cpp(169,33): warning C4018: '>=': signed/unsigned mismatch
+  mpzArray.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1801 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Prime Products++.vcxproj -> C:\Users\matty\source\repos\Prime Products++\bin\x64\Release\Prime Products++.exe
