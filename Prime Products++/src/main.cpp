@@ -8,8 +8,6 @@
 
 #define USE_ARRAY 1
 
-//static size_t allocBatch;
-
 double Log2(mpz_t x)
 {
     signed long pow;
@@ -125,13 +123,6 @@ void Branch(int start, int interval, int max)
                 mpz_set(collapsed[collapsed.Size() - 1], packets[packets.Size() - 1]);
             }
 
-            // ==== packets = collapsed ====
-
-            /*packets.TempClear();
-            for (int c = 0; c < collapsed.Size(); c++)
-            {
-                packets.Back(collapsed[c]);
-            }*/
             packets = collapsed;
         }
 
@@ -140,8 +131,6 @@ void Branch(int start, int interval, int max)
         collapsed.TempClear();
 #endif
     }
-
-    std::cout << "prod size: " << Log2(prod) << std::endl;
 
     mpz_clear(prod);
 
